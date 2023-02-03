@@ -1,0 +1,17 @@
+d={}
+for x in range(int(input())):
+    name = input()
+    score = float(input())
+    d[name]=score
+l=[]
+items = d.items()
+uk=sorted(d.values())
+a=set(uk)
+a=sorted(a)
+a=a[1]
+for key, value in items:
+    if value == a:
+        l.append(key)
+        l.sort()
+for out in range(len(l)):
+    print(l[out])
