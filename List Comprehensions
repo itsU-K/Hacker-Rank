@@ -3,10 +3,18 @@ if __name__ == '__main__':
     y = int(input())
     z = int(input())
     n = int(input())
-    res=[]
+
+#LOGIC
+ 
+    out=[]
     for i in range(x+1):
         for j in range(y+1):
             for k in range(z+1):
                 if (i+j+k) != n:
-                    res.append([i,j,k])
-    print(res)
+                    out.append([i,j,k])
+    print(out)
+
+    
+# ONE LINE
+# ans = [[f,s,t] for f in range(x+1) for s in range(y+1) for t in range(z+1) if f+s+t != n]
+# print (ans)
